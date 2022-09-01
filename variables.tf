@@ -21,3 +21,5 @@ variable "MD_ARM_TENANT_ID" {
 
 }
 
+
+
