@@ -6,4 +6,10 @@ resource "azurerm_key_vault_access_policy" "vm_identity_policy" {
    secret_permissions = [
     "Get",  "Delete", "Set", "Purge", "Recover" , "List", "Backup"
   ]
+  
+  lifecycle {
+    ignore_changes = [
+     secret_permissions
+    ]
+  }
 }
